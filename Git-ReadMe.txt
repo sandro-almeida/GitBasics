@@ -27,78 +27,82 @@ https://www.git-tower.com/learn/git/ebook/en/command-line/tools-services/diff-me
 > With GitHub, you can deploy from a branch for final testing in production before merging to master.
 
 
-### Git commands (all start with git) ###
-<command> --help
+### Git commands ###
+git <command> --help
   > Shows a help page for each <command>
 
-init
+git init
   > Create a local repository
 
-clone <URL>
+git clone <URL>
   > Clone an existing repository
 
-remote add origin <URL of the repository>
+git remote add origin <URL of the repository>
   > Link the new created local repository to the <URL of the repository>; the <URL of the repository> is created in github
   > Ex: git remote add origin https://github.com/sandro-almeida/Bash-Scripts.git
 
-push -u origin master
+git push -u origin master
   > Push the committed changes from the local project to the remote repository
 
-pull
+git pull
   > Updates local repository with updates from remote repository
 
-status
+git status
   > Shows an overview of your changes
 
-diff <fileName>
+git diff <fileName>
   > Shows a diff from the current version of a file and its last version
 
-difftool <fileName>
+git difftool <fileName>
   > Open a GUI diff tool (PENDING: understand how to set up the difftool)
 
-add <fileName>
+git add <fileName>
   > Add <fileName> to the staged area
   Ex: git add .
 
-rm <fileName>
+git rm <fileName>
   > Set the removed file to the staged area
 
-commit -m "<commit message>"
+git commit -m "<commit message>"
   > Commit the files located at the staged area, which creates a new node at the history tree
 
-log [-stat -p]
+git log [-stat -p]
   > Shows a list of historical commits
   Ex: git log --oneline
 
-checkout <branch>
+git checkout <branch>
   > Moves to a different branch
 
-branch <new branch name>
+git branch <new branch name>
   > Creates a new branch
 
-branch -v
+git branch -v
   > Shows a list of current branches
 
-reset
+git reset
   > Unstage changes (move from the staging area to the working directory)
 
-reset --hard
+git reset --hard
   > Undo all changes in the working directory and staging area
 
-clean -fd
+git clean -fd
   > Remove untracked files and directories (e.g. new files and directories in the working directory)
 
-clean -n
+git clean -n
   > Indicates the files to be removed but do not remove them
 
-merge <branch>
+git merge <branch>
   > Incorporate changes from the <branch> into the current branch. Ex: assuming the current branch is master, then git command 'git merge topic' will replay the changes made on the topic branch since it diverged from master until its current commit on top of master, and record the result in a new commit
 
-config --list
+git config --list
   > List all variables set in config file, along with their values
 
-config --system --edit
+git config --system --edit
   > Edit the system configuration file
+
+GIT_SSL_NO_VERIFY=true <git command>
+  > When having problems like "fatal: unable to access '<URL>': SSL certificate problem: self signed certificate in certificate chain"
+  Ex: GIT_SSL_NO_VERIFY=true git push -u origin master
 
 
 
