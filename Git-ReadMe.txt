@@ -94,9 +94,11 @@ clean -n
 merge <branch>
   > Incorporate changes from the <branch> into the current branch. Ex: assuming the current branch is master, then git command 'git merge topic' will replay the changes made on the topic branch since it diverged from master until its current commit on top of master, and record the result in a new commit
 
+config --list
+  > List all variables set in config file, along with their values
 
-
-
+config --system --edit
+  > Edit the system configuration file
 
 
 
