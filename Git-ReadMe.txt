@@ -18,9 +18,9 @@ https://www.git-tower.com/learn/git/ebook/en/command-line/tools-services/diff-me
 
 > At any time only one branch is active = checkout branch = HEAD
 
-> Git is an example of a distributed version control system (DVCS). Unlike once popular centralized version control systems, DVCSs like Git don’t need a constant connection to a central repository. Developers can work anywhere and collaborate asynchronously from any time zone.
+> Git is an example of a distributed version control system (DVCS). Unlike once popular centralized version control systems, DVCSs like Git donâ€™t need a constant connection to a central repository. Developers can work anywhere and collaborate asynchronously from any time zone.
 
-> A repository, or Git project, encompasses the entire collection of files and folders associated with a project, along with each file’s revision history. The file history appears as snapshots in time called commits, and the commits exist as a linked-list relationship, and can be organized into multiple lines of development called branches. Because Git is a DVCS, repositories are self-contained units and anyone who owns a copy of the repository can access the entire codebase and its history.
+> A repository, or Git project, encompasses the entire collection of files and folders associated with a project, along with each fileâ€™s revision history. The file history appears as snapshots in time called commits, and the commits exist as a linked-list relationship, and can be organized into multiple lines of development called branches. Because Git is a DVCS, repositories are self-contained units and anyone who owns a copy of the repository can access the entire codebase and its history.
 
 > Branching is a core concept in Git, and the entire GitHub Flow is based upon it. There's only one rule: anything in the master branch is always deployable.
 
@@ -70,8 +70,14 @@ git log [-stat -p]
   > Shows a list of historical commits
   Ex: git log --oneline
 
+git show --name-only
+  > Lists files committed but not yet pushed
+
 git checkout <branch>
   > Moves to a different branch
+
+git checkout <file>
+  > Discard <file> changes in working directory
 
 git branch <new branch name>
   > Creates a new branch
