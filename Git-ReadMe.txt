@@ -44,6 +44,10 @@ git remote add origin <URL of the repository>
 git push -u origin master
   > Push the committed changes from the local project to the remote repository
 
+git push --set-upstream origin <currentBranch>
+  > Push the current branch (<currentBranch>) and set the remote as upstream
+  > Ex: git push --set-upstream origin RemoveDominiosHardcoded
+
 git pull
   > Updates local repository with updates from remote repository
 
