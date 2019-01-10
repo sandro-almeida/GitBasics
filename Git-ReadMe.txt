@@ -86,7 +86,7 @@ git checkout <file>
 git branch <new branch name>
   > Creates a new branch
 
-git branch -v
+git branch -a
   > Shows a list of current branches
 
 git reset
@@ -112,6 +112,9 @@ git config --list
 
 git config --system --edit
   > Edit the system configuration file
+
+git fetch
+  > Fetch remote tracking branches (useful when you create a branch in gitHub and this branch has not yet showed up in your local repository)
 
 GIT_SSL_NO_VERIFY=true <git command>
   > When having problems like "fatal: unable to access '<URL>': SSL certificate problem: self signed certificate in certificate chain"
