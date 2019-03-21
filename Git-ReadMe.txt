@@ -80,6 +80,9 @@ git show --name-only
 git checkout <branch>
   > Moves to a different branch
 
+git checkout -
+  > Moves to the branch earlier accessed before moving to the actual branch
+
 git checkout <file>
   > Discard <file> changes in working directory
 
