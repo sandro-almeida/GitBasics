@@ -101,6 +101,9 @@ git reset --hard
 git reset HEAD <file>
   > Unstages <file> (<file> already added to the staging area returns to the working directory)
 
+git reset HEAD~2
+  > Undo the last 2 commits; the files created/updated on these 2 commits return to the working directory
+
 git clean -fd
   > Remove untracked files and directories (e.g. new files and directories in the working directory)
 
