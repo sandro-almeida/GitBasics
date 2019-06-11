@@ -114,7 +114,16 @@ git merge <branch>
   > Incorporate changes from the <branch> into the current branch. Ex: assuming the current branch is master, then git command 'git merge topic' will replay the changes made on the topic branch since it diverged from master until its current commit on top of master, and record the result in a new commit
 
 git config --list
-  > List all variables set in config file, along with their values
+  > List all variables (global and local) set in config file, along with their values
+
+git config --global -l
+  > List all global variables set in config file, along with their values
+  
+git config --global pull.rebase true
+  > Adds a new configuration (pull.rebase=true) in the global config file; it indicates that the pull command will now perform a rebase operation rather than a merge
+
+git config --global merge.ff false
+  > Adds a new configuration (merge.ff=false) in the global config file; it indicates that new merge commands will no longer be fast-forward, always forcing a new commit after a merge
 
 git config --system --edit
   > Edit the system configuration file
