@@ -67,6 +67,9 @@ git add <fileName>
 git rm <fileName>
   > Set the removed file to the staged area
 
+git rm -r <dirName>
+  > Recursively removes a directory and its files and includes this deletion in the staging area
+
 git commit -m "<commit message>"
   > Commit the files located at the staged area, which creates a new node at the history tree
 
