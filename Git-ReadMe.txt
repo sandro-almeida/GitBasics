@@ -57,6 +57,9 @@ git status
 git diff <fileName>
   > Shows a diff from the current version of a file and its last version
 
+git diff --staged <fileName>
+  > Shows a diff from the current staged version of a file and its last version
+
 git difftool <fileName>
   > Open a GUI diff tool (PENDING: understand how to set up the difftool)
 
