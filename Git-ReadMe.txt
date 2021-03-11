@@ -104,6 +104,9 @@ git reset
 git reset --hard
   > Undo all changes in the working directory and staging area
 
+git reset --hard HEAD~1
+  > Removes last commit, returning to the commit before head
+
 git reset HEAD <file>
   > Unstages <file> (<file> already added to the staging area returns to the working directory)
 
